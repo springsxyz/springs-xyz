@@ -36,7 +36,7 @@ a {
   margin: 0 auto;
   padding: 0 clamp(24px, 5vw, 78px);
   display: grid;
-  grid-template-rows: auto minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr) auto;
 }
 
 .site-header {
@@ -66,7 +66,7 @@ a {
 .spring-mark path {
   fill: none;
   stroke: currentColor;
-  stroke-width: 2.2;
+  stroke-width: 2.15;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
@@ -204,6 +204,28 @@ main {
 .app-tile:focus-visible {
   outline: 2px solid var(--blue);
   outline-offset: 8px;
+}
+
+.site-footer {
+  min-height: clamp(48px, 7vh, 62px);
+  display: grid;
+  place-items: center;
+  border-top: 1px solid var(--ink);
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: clamp(9px, 0.8vw, 11px);
+  letter-spacing: 0.02em;
+}
+
+.site-footer strong {
+  font-weight: 600;
+}
+
+.site-footer em {
+  color: var(--blue);
+  font-style: normal;
 }
 
 @media (max-width: 760px) {
