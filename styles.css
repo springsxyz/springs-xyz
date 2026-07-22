@@ -58,21 +58,17 @@ a {
 }
 
 .spring-mark {
-  width: 30px;
-  height: 43px;
+  width: 34px;
+  height: 34px;
   overflow: visible;
 }
 
 .spring-mark path {
   fill: none;
   stroke: currentColor;
-  stroke-width: 2.4;
+  stroke-width: 2.2;
   stroke-linecap: round;
   stroke-linejoin: round;
-}
-
-.spring-mark circle {
-  fill: var(--blue);
 }
 
 .signal {
@@ -239,8 +235,8 @@ main {
   }
 
   .spring-mark {
-    width: 23px;
-    height: 34px;
+    width: 27px;
+    height: 27px;
   }
 
   .signal {
