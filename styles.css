@@ -58,33 +58,29 @@ a {
 .wordmark {
   justify-self: start;
   display: inline-flex;
-  align-items: center;
-  gap: 11px;
-  font-size: 14px;
-  font-weight: 780;
-  letter-spacing: -0.02em;
+  align-items: baseline;
+  gap: 7px;
+  color: var(--ink);
 }
 
-.mark {
-  width: 26px;
-  height: 26px;
-  padding: 4px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: end;
-  gap: 2px;
-  border: 1px solid currentColor;
-  border-radius: 50%;
+.wordmark-springs {
+  font-family: "Arial Narrow", "Roboto Condensed", Impact, sans-serif;
+  font-size: 19px;
+  font-weight: 900;
+  letter-spacing: -0.045em;
 }
 
-.mark i {
-  height: 40%;
-  border-radius: 3px;
-  background: currentColor;
+.wordmark-xyz {
+  position: relative;
+  top: -1px;
+  padding: 3px 5px 2px;
+  color: var(--paper);
+  background: var(--ink);
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
 }
-
-.mark i:nth-child(2) { height: 85%; }
-.mark i:nth-child(3) { height: 60%; }
 
 .studio-label {
   height: 100%;
@@ -126,7 +122,7 @@ main {
   height: 100%;
   min-height: 0;
   display: grid;
-  place-items: center;
+  place-items: start;
 }
 
 .intro {
@@ -575,12 +571,11 @@ h1 em {
   }
 
   .wordmark {
-    font-size: 13px;
+    gap: 6px;
   }
 
-  .mark {
-    width: 24px;
-    height: 24px;
+  .wordmark-springs {
+    font-size: 18px;
   }
 
   .contact-link {
