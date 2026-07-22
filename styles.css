@@ -70,17 +70,40 @@ a {
   letter-spacing: -0.045em;
 }
 
-.wordmark-xyz {
+.wordmark-spring {
   position: relative;
-  top: -1px;
-  padding: 3px 5px 2px;
-  color: var(--paper);
-  background: var(--ink);
+  top: 2px;
+  width: 34px;
+  height: 20px;
+  display: inline-grid;
+  place-items: center;
+}
+
+.wordmark-spring span {
+  position: relative;
+  z-index: 2;
+  padding: 1px 3px;
+  color: var(--ink);
+  background: var(--paper);
   font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
-  font-size: 8px;
+  font-size: 7px;
   font-weight: 800;
   letter-spacing: 0.08em;
 }
+
+.wordmark-spring i {
+  position: absolute;
+  left: 1px;
+  width: 32px;
+  height: 9px;
+  border: 1px solid var(--ink);
+  border-radius: 50%;
+  transform: rotate(-5deg);
+}
+
+.wordmark-spring i:nth-child(1) { top: 0; }
+.wordmark-spring i:nth-child(2) { top: 5px; }
+.wordmark-spring i:nth-child(3) { top: 10px; }
 
 .studio-label {
   height: 100%;
@@ -249,8 +272,8 @@ h1 em {
   position: relative;
   min-width: 0;
   min-height: 0;
-  width: min(56vw, 620px);
-  height: min(72%, 420px);
+  width: min(34vw, 390px);
+  height: min(44%, 260px);
   display: grid;
   grid-template-columns: 0.92fr 1.08fr;
   overflow: hidden;
@@ -308,7 +331,7 @@ h1 em {
 
 .app-copy {
   min-width: 0;
-  padding: clamp(20px, 2.4vw, 34px);
+  padding: clamp(12px, 1.4vw, 20px);
   display: flex;
   flex-direction: column;
   background:
@@ -322,12 +345,12 @@ h1 em {
   justify-content: space-between;
   gap: 20px;
   color: rgba(255, 255, 255, 0.72);
-  font-size: 9px;
+  font-size: 7px;
   font-weight: 750;
   letter-spacing: 0.11em;
   text-transform: uppercase;
   border-bottom: 1px solid rgba(255, 255, 255, 0.42);
-  padding-bottom: 13px;
+  padding-bottom: 8px;
 }
 
 .app-title {
@@ -337,7 +360,7 @@ h1 em {
 .app-title h2 {
   margin: 0 0 clamp(12px, 2vh, 22px);
   font-family: "Arial Narrow", "Roboto Condensed", Impact, sans-serif;
-  font-size: clamp(54px, 6vw, 84px);
+  font-size: clamp(38px, 3.9vw, 56px);
   font-stretch: condensed;
   font-weight: 900;
   line-height: 0.8;
@@ -351,7 +374,7 @@ h1 em {
 .app-title p {
   max-width: 290px;
   margin: 0;
-  font-size: clamp(15px, 1.4vw, 20px);
+  font-size: clamp(11px, 1vw, 14px);
   line-height: 1.35;
   letter-spacing: -0.025em;
 }
@@ -359,11 +382,11 @@ h1 em {
 .visit-link {
   width: fit-content;
   padding-bottom: 5px;
-  padding: 10px 13px;
+  padding: 7px 9px;
   color: var(--ink);
   background: var(--acid);
   border: 1px solid var(--ink);
-  font-size: 12px;
+  font-size: 9px;
   font-weight: 750;
 }
 
@@ -388,15 +411,15 @@ h1 em {
   z-index: 4;
   top: 24px;
   left: 22px;
-  width: 92px;
-  height: 92px;
+  width: 56px;
+  height: 56px;
   display: grid;
   place-items: center;
   color: var(--ink);
   border: 2px solid currentColor;
   border-radius: 50%;
   font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
-  font-size: 9px;
+  font-size: 6px;
   font-weight: 800;
   line-height: 1.25;
   letter-spacing: 0.08em;
@@ -422,8 +445,8 @@ h1 em {
   z-index: 2;
   top: 50%;
   left: 56%;
-  width: min(58vh, 78%);
-  max-width: 430px;
+  width: min(38vh, 76%);
+  max-width: 220px;
   aspect-ratio: 1;
   transform: translate(-50%, -50%);
   border: 3px solid var(--ink);
@@ -481,7 +504,7 @@ h1 em {
   bottom: 18px;
   margin: 0;
   color: rgba(23, 25, 23, 0.65);
-  font-size: 9px;
+  font-size: 6px;
   font-weight: 800;
   letter-spacing: 0.11em;
   text-transform: uppercase;
@@ -550,8 +573,8 @@ h1 em {
   }
 
   .app-card {
-    width: min(62vw, 560px);
-    height: min(78%, 400px);
+    width: min(42vw, 360px);
+    height: min(50%, 250px);
     grid-template-columns: 1fr 0.92fr;
     box-shadow: 9px 9px 0 var(--acid);
   }
@@ -620,8 +643,8 @@ h1 em {
   }
 
   .app-card {
-    width: min(74vw, 290px);
-    height: min(72%, 430px);
+    width: min(58vw, 225px);
+    height: min(54%, 330px);
     grid-template-columns: 1fr;
     grid-template-rows: 0.9fr 1.1fr;
     box-shadow: 7px 7px 0 var(--acid);
@@ -634,17 +657,16 @@ h1 em {
   }
 
   .app-copy {
-    padding: clamp(18px, 5vw, 24px);
+    padding: 12px;
   }
 
   .app-title h2 {
-    margin-bottom: 8px;
-    font-size: clamp(54px, 18vw, 76px);
+    margin-bottom: 6px;
+    font-size: 44px;
   }
 
   .app-title p {
-    max-width: 250px;
-    font-size: 14px;
+    display: none;
   }
 
   .visit-link {
@@ -660,9 +682,9 @@ h1 em {
   .print-stamp {
     top: 12px;
     left: 12px;
-    width: 62px;
-    height: 62px;
-    font-size: 6px;
+    width: 46px;
+    height: 46px;
+    font-size: 5px;
     border-width: 1px;
   }
 
@@ -717,8 +739,8 @@ h1 em {
   }
 
   .app-card {
-    width: min(60vw, 620px);
-    height: min(82%, 360px);
+    width: min(42vw, 360px);
+    height: min(72%, 220px);
   }
 }
 
@@ -759,22 +781,22 @@ h1 em {
   }
 
   .app-card {
-    width: min(58vw, 520px);
-    height: min(90%, 250px);
+    width: min(40vw, 340px);
+    height: min(78%, 210px);
     grid-template-columns: 0.92fr 1.08fr;
     grid-template-rows: 1fr;
   }
 
   .app-copy {
-    padding: 18px;
+    padding: 12px;
   }
 
   .app-title h2 {
-    font-size: clamp(54px, 8vw, 74px);
+    font-size: clamp(38px, 5vw, 44px);
   }
 
   .app-title p {
-    font-size: 13px;
+    display: none;
   }
 
   .record {
