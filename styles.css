@@ -215,15 +215,10 @@ main {
   font-style: normal;
 }
 
-.copyright,
-.studio-status {
+.copyright {
   color: #75777a;
   font-size: clamp(7px, 0.65vw, 9px) !important;
   letter-spacing: 0.04em !important;
-}
-
-.studio-status {
-  text-align: right;
 }
 
 @media (max-width: 760px) {
@@ -283,10 +278,6 @@ main {
     min-height: 46px;
     grid-template-columns: 1fr auto;
     gap: 12px;
-  }
-
-  .studio-status {
-    display: none;
   }
 
   .footer-line {
