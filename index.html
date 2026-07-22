@@ -5,80 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Springs XYZ is an independent software studio building thoughtful apps for everyday life."
+      content="Springs XYZ creates thoughtful apps that make everyday life a little better."
     />
-    <meta name="theme-color" content="#f1eee6" />
+    <meta name="theme-color" content="#faf9f6" />
     <link rel="canonical" href="https://springsxyz.com/" />
-    <meta property="og:title" content="Springs XYZ — Independent software studio" />
+    <meta property="og:title" content="Springs XYZ — Thoughtful apps for everyday life" />
     <meta
       property="og:description"
-      content="Thoughtful apps for everyday life."
+      content="Apps that make everyday life a little better."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://springsxyz.com/" />
-    <title>Springs XYZ — Independent software studio</title>
+    <title>Springs XYZ — Apps that make everyday life a little better</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="site-frame">
+    <div class="site-shell">
       <header class="site-header">
         <a class="wordmark" href="./" aria-label="Springs XYZ home">
-          <span class="wordmark-springs">Springs</span>
-          <span class="wordmark-spring">
-            <i aria-hidden="true"></i><i aria-hidden="true"></i><i aria-hidden="true"></i>
-            <span>XYZ</span>
-          </span>
+          <svg class="spring-mark" viewBox="0 0 36 52" aria-hidden="true">
+            <path d="M7 5c0 0 22-8 22 4S6 13 6 24s24 1 24 12S8 47 8 47" />
+            <circle cx="8" cy="48" r="2.6" />
+          </svg>
+          <span>Springs XYZ</span>
         </a>
 
-        <p class="studio-label">Independent product studio</p>
+        <span class="signal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
 
         <a class="contact-link" href="mailto:springsxyz.com@gmail.com">
-          Contact <span aria-hidden="true">↗</span>
+          Contact <span aria-hidden="true">→</span>
         </a>
       </header>
 
       <main>
-        <section class="showcase" aria-label="Springs XYZ apps">
+        <section class="intro" aria-labelledby="studio-promise">
+          <h1 id="studio-promise">Apps that make<br />everyday life<br />a little better<span>.</span></h1>
+        </section>
+
+        <section class="apps" aria-label="Apps by Springs XYZ">
           <a
-            class="app-card"
+            class="app-row"
+            id="feeln"
             href="https://tryfeeln.com"
             target="_blank"
             rel="noreferrer"
-            aria-label="Visit Feeln"
+            aria-label="Open Feeln — Music for the moments words cannot reach"
           >
-            <div class="app-copy">
-              <div class="app-meta">
-                <span>Issue 01 · Now building</span>
-                <span>Music · Mobile · Web</span>
-              </div>
-              <div class="app-title">
-                <h2>Feeln<span>.</span></h2>
-                <p>Music for the moments words cannot reach.</p>
-              </div>
-              <span class="visit-link">Visit Feeln <b aria-hidden="true">↗</b></span>
-            </div>
+            <span class="photo-reveal" aria-hidden="true"></span>
 
-            <div class="app-art" aria-hidden="true">
-              <span class="print-stamp">Built small<br />Made to last</span>
-              <div class="orbit orbit-one"></div>
-              <div class="orbit orbit-two"></div>
-              <div class="record"><span></span></div>
-              <p>Press play on a feeling</p>
-            </div>
+            <span class="app-icon" aria-hidden="true">
+              <svg viewBox="0 0 100 100">
+                <circle class="icon-orbit" cx="50" cy="50" r="37" />
+                <path class="icon-wave" d="M14 53c10-21 21 20 32 0s22 20 40 0" />
+              </svg>
+            </span>
+
+            <span class="app-copy">
+              <strong>Feeln</strong>
+              <span class="tiny-signal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+              <span>Music for the moments words cannot reach.</span>
+            </span>
+
+            <span class="open-action">
+              <span class="open-arrow" aria-hidden="true">→</span>
+              <span>Open</span>
+            </span>
           </a>
-          <p class="more-note"><span></span> More to come</p>
+
+          <div class="more-row">
+            <span class="loading-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+            <span>More to come</span>
+            <span class="dashed-line" aria-hidden="true"></span>
+          </div>
         </section>
       </main>
 
       <footer class="site-footer">
-        <p>© <span id="year">2026</span> Springs XYZ</p>
-        <p class="footer-tagline"><strong>Thoughtful apps.</strong> <em>Made to keep.</em></p>
-        <p>One studio · One app so far</p>
+        <span>© <span id="year">2026</span> Springs XYZ</span>
+        <span>Thoughtful apps · Made to keep</span>
       </footer>
     </div>
 
     <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
+      document.getElementById("year").textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
