@@ -38,56 +38,26 @@
       </header>
 
       <main>
-        <section class="intro" aria-labelledby="studio-promise">
-          <h1 id="studio-promise">Apps that make<br />everyday life<br />a little better<span>.</span></h1>
-        </section>
-
-        <section class="apps" aria-label="Apps by Springs XYZ">
+        <section class="catalog" aria-label="Apps by Springs XYZ">
+          <h1 class="visually-hidden">Apps by Springs XYZ</h1>
           <a
-            class="app-row"
+            class="app-tile"
             id="feeln"
             href="https://tryfeeln.com"
             target="_blank"
             rel="noreferrer"
             aria-label="Open Feeln — Music for the moments words cannot reach"
           >
-            <span class="photo-reveal" aria-hidden="true"></span>
-
             <span class="app-icon" aria-hidden="true">
               <svg viewBox="0 0 100 100">
                 <circle class="icon-orbit" cx="50" cy="50" r="37" />
                 <path class="icon-wave" d="M14 53c10-21 21 20 32 0s22 20 40 0" />
               </svg>
             </span>
-
-            <span class="app-copy">
-              <strong>Feeln</strong>
-              <span class="tiny-signal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
-              <span>Music for the moments words cannot reach.</span>
-            </span>
-
-            <span class="open-action">
-              <span class="open-arrow" aria-hidden="true">→</span>
-              <span>Open</span>
-            </span>
+            <span class="app-label">Feeln <span aria-hidden="true">↗</span></span>
           </a>
-
-          <div class="more-row">
-            <span class="loading-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
-            <span>More to come</span>
-            <span class="dashed-line" aria-hidden="true"></span>
-          </div>
         </section>
       </main>
-
-      <footer class="site-footer">
-        <span>© <span id="year">2026</span> Springs XYZ</span>
-        <span>Thoughtful apps · Made to keep</span>
-      </footer>
     </div>
-
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
   </body>
 </html>
