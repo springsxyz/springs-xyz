@@ -17,7 +17,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://springsxyz.com/" />
     <title>Springs XYZ — Apps that make everyday life a little better</title>
-    <link rel="stylesheet" href="./styles.css?v=7" />
+    <link rel="stylesheet" href="./styles.css?v=8" />
   </head>
   <body>
     <div class="site-shell">
@@ -33,7 +33,7 @@
           <span>Springs XYZ</span>
         </a>
 
-        <span class="signal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+        <p class="catalog-id">App catalog <span>01</span></p>
 
         <a class="contact-link" href="mailto:springsxyz.com@gmail.com">
           Contact <span aria-hidden="true">→</span>
@@ -62,8 +62,14 @@
       </main>
 
       <footer class="site-footer">
-        <p><strong>Thoughtful apps.</strong> <em>Made to keep.</em></p>
+        <p class="copyright">© <span id="year">2026</span> Springs XYZ</p>
+        <p class="footer-line"><strong>Thoughtful apps.</strong> <em>Made to keep.</em></p>
+        <p class="studio-status">One app so far</p>
       </footer>
     </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
