@@ -253,8 +253,8 @@ h1 em {
   position: relative;
   min-width: 0;
   min-height: 0;
-  width: min(78vw, 860px);
-  height: min(100%, 580px);
+  width: min(56vw, 620px);
+  height: min(72%, 420px);
   display: grid;
   grid-template-columns: 0.92fr 1.08fr;
   overflow: hidden;
@@ -312,7 +312,7 @@ h1 em {
 
 .app-copy {
   min-width: 0;
-  padding: clamp(24px, 3.5vw, 48px);
+  padding: clamp(20px, 2.4vw, 34px);
   display: flex;
   flex-direction: column;
   background:
@@ -341,7 +341,7 @@ h1 em {
 .app-title h2 {
   margin: 0 0 clamp(12px, 2vh, 22px);
   font-family: "Arial Narrow", "Roboto Condensed", Impact, sans-serif;
-  font-size: clamp(72px, 8.5vw, 124px);
+  font-size: clamp(54px, 6vw, 84px);
   font-stretch: condensed;
   font-weight: 900;
   line-height: 0.8;
@@ -554,8 +554,8 @@ h1 em {
   }
 
   .app-card {
-    width: min(86vw, 760px);
-    height: min(100%, 540px);
+    width: min(62vw, 560px);
+    height: min(78%, 400px);
     grid-template-columns: 1fr 0.92fr;
     box-shadow: 9px 9px 0 var(--acid);
   }
@@ -625,8 +625,8 @@ h1 em {
   }
 
   .app-card {
-    width: min(88vw, 340px);
-    height: min(88%, 560px);
+    width: min(74vw, 290px);
+    height: min(72%, 430px);
     grid-template-columns: 1fr;
     grid-template-rows: 0.9fr 1.1fr;
     box-shadow: 7px 7px 0 var(--acid);
@@ -722,8 +722,8 @@ h1 em {
   }
 
   .app-card {
-    width: min(76vw, 760px);
-    height: 100%;
+    width: min(60vw, 620px);
+    height: min(82%, 360px);
   }
 }
 
@@ -764,8 +764,8 @@ h1 em {
   }
 
   .app-card {
-    width: min(76vw, 720px);
-    height: 100%;
+    width: min(58vw, 520px);
+    height: min(90%, 250px);
     grid-template-columns: 0.92fr 1.08fr;
     grid-template-rows: 1fr;
   }
