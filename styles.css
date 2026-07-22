@@ -58,17 +58,12 @@ a {
 }
 
 .spring-mark {
-  width: 34px;
-  height: 34px;
-  overflow: visible;
-}
-
-.spring-mark path {
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2.15;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  filter: grayscale(1) contrast(4.5) brightness(1.7);
+  mix-blend-mode: multiply;
+  transform: scale(1.8);
 }
 
 .signal {
@@ -245,8 +240,9 @@ main {
   }
 
   .spring-mark {
-    width: 27px;
-    height: 27px;
+    width: 30px;
+    height: 30px;
+    transform: scale(1.7);
   }
 
   .signal {
