@@ -1,19 +1,33 @@
-# Springs XYZ site
+# Of Use Apps website
 
-Standalone one-page company site for `springsxyz.com`.
+Static company landing page prepared for https://ofuseapps.com/. The owner selected the Of Use Apps name and logo 01 / Plainly Useful. The page uses a black-and-white umbrella identity, with the workout timer's existing chartreuse accent.
+
+Only the published Start Your Round app is advertised. The timer illustration is explicitly an example session. Contact links retain the existing springsxyz.com@gmail.com inbox; buying a domain does not create a new email mailbox.
+
+## Files
+
+- index.html: content, metadata, canonical URL and working links.
+- styles.css: responsive Direct Utility presentation, visible focus and reduced-motion support.
+- assets/of-use-apps-wordmark.svg: path-based optical re-creation of the selected wordmark.
+- assets/of-use-apps-favicon.svg: compact version using the same lettering.
+- CNAME: target custom domain ofuseapps.com.
+
+The SVGs have no external font, script or embedded raster dependency. The wordmark is a vector re-creation, not an exact trace of the concept image. Older assets remain in the repository as historical files and are not used by this page.
 
 ## Preview
 
 From this directory:
 
 ```powershell
-python -m http.server 4173
+python -m http.server 4174 --bind 127.0.0.1
 ```
 
-Then open `http://localhost:4173`.
+Then open http://127.0.0.1:4174/. No installation or build step is needed. Stop the preview with Ctrl+C.
 
-## Deployment
+## Hosting and domain handoff
 
-The site is published with GitHub Pages from the repository's `main` branch and uses
-the custom domain `springsxyz.com`. The `CNAME` file preserves the custom-domain
-setting on each deployment.
+Keep the existing GitHub Pages repository, springsxyz/springs-xyz, published from main at the repository root. This is not a new hosting project.
+
+The checked-in CNAME and page metadata target the new domain. As checked on 29 October 2026, the live Pages configuration still uses springsxyz.com and the new domain still uses Namecheap parking DNS. The source update does not by itself confirm a live domain migration.
+
+Follow [DOMAIN_MIGRATION.md](DOMAIN_MIGRATION.md) to coordinate the Pages custom-domain change, DNS, certificate and HTTPS checks. Do not describe ofuseapps.com as live until those checks succeed.
