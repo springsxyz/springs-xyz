@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 64 64" role="img" aria-labelledby="start-your-round-icon-title">
+  <title id="start-your-round-icon-title">Start Your Round</title>
+  <!-- Geometry and colors match the approved citron favicon in Products/start-your-round/tools/brand-assets.mjs. -->
+  <rect width="64" height="64" rx="14.4" fill="#CEE52D" />
+  <g fill="none" stroke="#111111" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="32" cy="36" r="17" />
+    <path d="M26 10.5h12 M32 10.5V19 M32 36V26" />
+  </g>
+</svg>

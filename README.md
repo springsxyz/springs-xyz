@@ -1,8 +1,8 @@
 # Of Use Apps website
 
-Static company landing page prepared for https://ofuseapps.com/. The owner selected the Of Use Apps name and logo 01 / Plainly Useful. The page uses a black-and-white umbrella identity, with the workout timer's existing chartreuse accent.
+Simple app catalog at https://ofuseapps.com/. The owner selected the Of Use Apps name and logo 01 / Plainly Useful. The page presents the logo, contact link, app icon/name/description and a small footer on white.
 
-Only the published Start Your Round app is advertised. The timer illustration is explicitly an example session. Contact links retain the existing springsxyz.com@gmail.com inbox; buying a domain does not create a new email mailbox.
+Only the published Start Your Round app is listed. Contact links retain the existing springsxyz.com@gmail.com inbox. The owner requested the catalog treatment on 29 October 2026, superseding the larger marketing layout and illustrative timer panel.
 
 ## Files
 
@@ -10,6 +10,7 @@ Only the published Start Your Round app is advertised. The timer illustration is
 - styles.css: responsive Direct Utility presentation, visible focus and reduced-motion support.
 - assets/of-use-apps-wordmark.svg: path-based optical re-creation of the selected wordmark.
 - assets/of-use-apps-favicon.svg: compact version using the same lettering.
+- assets/start-your-round-icon.svg: scalable version of the workout timer's approved chartreuse favicon geometry.
 - CNAME: target custom domain ofuseapps.com.
 
 The SVGs have no external font, script or embedded raster dependency. The wordmark is a vector re-creation, not an exact trace of the concept image. Older assets remain in the repository as historical files and are not used by this page.
