@@ -50,7 +50,7 @@ These were the starting parking records. The owner subsequently signed in to the
 
 GitHub documents the addresses, configuration order and www behavior in [Managing a custom domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site). Certificate and enforcement details are in [Securing Pages with HTTPS](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https).
 
-Changing this repository's custom domain does not create a redirect from springsxyz.com. An old-domain redirect needs its own hosting or registrar configuration and verification. No redirect has been claimed or configured here.
+**Owner decision, 29 October 2026:** use **ofuseapps.com** as the sole brand domain and leave **springsxyz.com** unused. Old-domain forwarding is intentionally omitted and is not an outstanding migration task.
 
 ## Local verification
 
