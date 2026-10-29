@@ -36,7 +36,6 @@ svg { display: block; width: 20px; height: 20px; flex-shrink: 0; fill: none; str
 .contact-link svg { width: 18px; height: 18px; }
 
 main { padding-block: 40px 72px; }
-h1 { margin: 0 0 32px; font-size: 18px; line-height: 1.4; font-weight: 600; letter-spacing: -.025em; }
 .app-catalog { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 220px)); gap: 40px 48px; margin: 0; padding: 0; list-style: none; }
 .app-catalog li { min-width: 0; }
 .app { display: block; width: fit-content; max-width: 100%; border-radius: 4px; }
@@ -56,7 +55,6 @@ h1 { margin: 0 0 32px; font-size: 18px; line-height: 1.4; font-weight: 600; lett
   .site-header { min-height: 96px; }
   .brand-logo { width: 120px; }
   main { padding-block: 32px 56px; }
-  h1 { margin-bottom: 28px; font-size: 17px; }
   .app-catalog { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 36px 24px; }
   .app-icon { width: 104px; height: 104px; margin-bottom: 18px; border-radius: 24px; }
   .app-name { gap: 8px; }
