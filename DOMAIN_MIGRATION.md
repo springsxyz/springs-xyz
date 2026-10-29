@@ -1,6 +1,6 @@
 # Of Use Apps domain migration
 
-Status: prepared; no live DNS or GitHub Pages custom-domain change has been made by this task.
+Status: landing page published, domain connected and HTTPS verified on 29 October 2026.
 
 Owner-confirmed new domain: **ofuseapps.com**, 29 October 2026. Existing site: **springsxyz.com**, repository springsxyz/springs-xyz.
 
@@ -15,9 +15,22 @@ Read-only checks on 29 October 2026 found:
 - Nameservers: dns1.registrar-servers.com and dns2.registrar-servers.com.
 - No apex AAAA answer was returned.
 
-These new-domain records are parking records, not GitHub Pages destinations. The registrar account has not been authenticated in this task.
+These were the starting parking records. The owner subsequently signed in to the Namecheap account for this domain and authorized continuing the connection.
 
-## Planned connection
+## Connection receipt — 29 October 2026
+
+- Published [pull request #2](https://github.com/springsxyz/springs-xyz/pull/2), merge commit `0ff8996046bcc6dc9f47b276c88ccb0c32b0de1b`, at 22:06:36 UTC (19:06:36 America/Santiago).
+- GitHub Pages reports `built`, using `ofuseapps.com` and the existing `main:/` source.
+- Replaced the `www` parking CNAME with `springsxyz.github.io.`.
+- Converted the apex parking redirect to `185.199.108.153` and added the remaining three GitHub Pages A records listed below. All four were confirmed by the public resolver at `1.1.1.1`.
+- The Namecheap host table shows exactly the four intended apex A records and the `www` CNAME. The existing email-forwarding setting and SPF record remain present; nameservers, email and security settings were not changed.
+- Public HTTP returns the correct Of Use Apps page and both SVG logos. `http://www.ofuseapps.com/` returns 301 to `http://ofuseapps.com/`.
+- GitHub's domain-health response marks both hostnames valid, served by Pages and eligible for HTTPS, with no CAA error.
+- GitHub approved a certificate for both hostnames, expiring 27 January 2027. HTTPS enforcement was enabled and confirmed saved.
+- Final normal-certificate checks passed: HTTPS apex returns 200 with the correct page and both SVG assets; HTTP apex redirects to HTTPS; HTTPS `www` redirects to the HTTPS apex; HTTP `www` redirects through the apex to HTTPS. No TLS error was bypassed.
+- Live browser verification confirmed the title, canonical URL, loaded wordmark and Start Your Round destination. Proof is retained at `../Branding/of-use-website-2026-10-29/landing-live-https.jpg`.
+
+## Connection procedure
 
 1. Confirm access to the domain's DNS account and review existing records.
 2. Set the existing GitHub Pages custom domain to ofuseapps.com, with CNAME aligned. This should precede pointing the new domain at GitHub.
@@ -43,4 +56,4 @@ Changing this repository's custom domain does not create a redirect from springs
 
 The landing page and vector logo have been inspected at desktop size and mobile widths 390 and 320 CSS pixels. The logo loads, app navigation reaches the apps section, and no horizontal overflow was found. The local preview returned HTTP 200. Source checks cover local paths, unique anchors, brand/domain metadata and SVG XML. Screenshots are retained in the parent workspace's Branding/of-use-website-2026-10-29 folder.
 
-Publication remains separate from these local checks.
+Publication and connection results are recorded above; local checks alone do not establish HTTPS readiness.

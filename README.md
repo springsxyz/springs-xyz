@@ -28,6 +28,6 @@ Then open http://127.0.0.1:4174/. No installation or build step is needed. Stop 
 
 Keep the existing GitHub Pages repository, springsxyz/springs-xyz, published from main at the repository root. This is not a new hosting project.
 
-The checked-in CNAME and page metadata target the new domain. As checked on 29 October 2026, the live Pages configuration still uses springsxyz.com and the new domain still uses Namecheap parking DNS. The source update does not by itself confirm a live domain migration.
+The landing update is published at https://ofuseapps.com/, and the new domain's DNS points to GitHub Pages. Normal certificate verification, HTTPS page/logo checks and HTTP/www redirects passed on 29 October 2026. HTTPS enforcement is enabled.
 
 Follow [DOMAIN_MIGRATION.md](DOMAIN_MIGRATION.md) to coordinate the Pages custom-domain change, DNS, certificate and HTTPS checks. Do not describe ofuseapps.com as live until those checks succeed.
